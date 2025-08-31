@@ -19,14 +19,4 @@
         cy.get('#ok-battles-premium').click();
        })
        
- it('Смена аватара', function () {
-        cy.visit('https://pokemonbattle.ru');
-        cy.get('#k_email').type('miss.panezhina@yandex.ru');
-        cy.wait(5000);
-        cy.get('#k_password').type('Academy113!');
-        cy.get('.MuiButton-root').click();
-        cy.get('.header_card_trainer').click();
 
-    
-
-    })
