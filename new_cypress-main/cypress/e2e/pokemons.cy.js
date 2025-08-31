@@ -1,9 +1,9 @@
 
    it('Покупка премиум', function () {
         cy.visit('https://pokemonbattle.ru');
-        cy.get('#k_email').type('miss.panezhina@yandex.ru');
+        cy.get('#k_email').type('MAIL');
         cy.wait(5000);
-        cy.get('#k_password').type('Academy113!');
+        cy.get('#k_password').type('PASSWORD');
         cy.get('.MuiButton-root').click();
         cy.get('.header_card_trainer').click();
         cy.get('[data-qa="premium"]').click();
@@ -28,4 +28,5 @@
         cy.get('.header_card_trainer').click();
 
     
+
     })
